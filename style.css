@@ -2,13 +2,20 @@
     font-family: "K2D";
     src: url("./fonts/K2D-Regular.ttf");
 }
+
+@font-face {
+    font-family: 'Kodchasan';
+    src: url("./fonts/Kodchasan-Regular.ttf");
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: "K2D";
 }
 ::-webkit-scrollbar{
     display: none;
+}
+body{
+    font-family: "K2D" ,"Kodchasan";
 }
 nav{
     height: 12vh;
@@ -54,6 +61,7 @@ nav .signUp-btn{
     background: white;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .heroSection{
@@ -94,6 +102,7 @@ nav .signUp-btn{
 button{
     padding: 12px 25px;
     border: none;
+    cursor: pointer;
 }
 .about{
     min-height: 50vh;
@@ -132,3 +141,109 @@ button{
     justify-content: center;
     align-items: center;
 }
+.sasukeSection{
+    height: 88vh;
+    background: #232B3B;
+    background-image: url("./images/wavy.png");
+    background-size: cover;
+    background-blend-mode: screen;
+    position: relative;
+}
+.sasuke-thinking{
+    position: absolute;
+    bottom: 0;
+    max-width: 650px;
+    width:70vw;
+}
+.sasukeStory{
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    width: 400px;
+    display: flex;
+    /* flex-direction: column; */
+}
+.sasukeStory p{
+    padding: 20px;
+    background: rgb(255, 255, 255);
+}
+.sasukeStory button{
+    background: #050127;
+    color: white;
+    border: 4px solid white;
+}
+.faq{
+    min-height: 70vh;
+    max-height: fit-content;
+    background-image: url("./images/japanese-store.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: scroll;
+}
+.accordion-cntr{
+    max-width: 800px;
+    width: 60%;
+    min-width: 400px;
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding:5px 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.active, .accordion:hover {
+    background-color: #ffffff;
+    color: black;
+}
+.panel {
+    padding: 20px;
+    width: 80%;
+    background-color: #151420;
+    display: none;
+    overflow: hidden;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    color: white;
+    text-align: justify;
+    border-radius: 0 0 15px 15px;
+    border:2px solid white;
+    border-top: none;
+}
+footer{
+    font-family: 'K2D' !important;
+    height: 50vh;
+    background: #110B1D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    /* align-items: center; */
+    gap: 50px;
+}
+footer p{
+    font-size: .8rem;
+    margin-top: 5px;
+}
+.map iframe{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.footerNav,.ramenContact{
+    margin-top: 55px;
+} 
