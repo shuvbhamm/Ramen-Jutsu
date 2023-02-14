@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "K2D";
+    src: url("./fonts/K2D-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "K2D";
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    height: 12vh;
+    width: 100%;
+    background: rgba(7, 57, 98,.8);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    font-size:12px;
+    z-index: 100;
+}
+nav .logo{
+    transform: scale(.6);
+    position: relative;
+    margin-left: -40px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+nav li{
+    padding: 0 10px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .login-nav{
+    display: flex;
+    align-items: center;
+    margin:0 30px 0 20px;
+}
+.login-nav li{
+    padding:0 10px;
+}
+nav .signUp-btn{
+    color: rgb(7, 57, 98);
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.heroSection{
+    height: 100vh;
+    background: #092842;
+    background-image:url("./images/heroSection-line.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 98;
+}
+.sasukeHeroImage{
+    height: 60vh;
+    width: 100vh;
+    transform: translateY();
+    background-image: url("./images/sasuke-new.jpg");
+    background-position:center;
+    background-size: cover;
+    border-radius: 0 0 100vh 100vh;
+    border: 4vw solid rgb(7, 57, 98);
+}
+.heroSection .bannerText{
+    color: #fff;
+    margin-top: 8vh;
+}
+.bannerText .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerText p{
+    line-height: 30px;
+    margin-right: 10px;
+}
+button{
+    padding: 12px 25px;
+    border: none;
+}
+.about{
+    height: 50vh;
+    background: #257CA9;
+    overflow: hidden;
+    display: flex;
+}
+.about .introduction{
+    width: calc(100vw - 50vh);
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.3rem;    word-spacing: 2px;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.introduction p{
+    margin-bottom: 20px;
+}
+.about .ramenVideo{
+    background: #073962;
+    /* float: right; */
+    height: 100%;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
