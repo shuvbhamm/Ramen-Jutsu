@@ -109,6 +109,7 @@ button{
     color: white;
     padding: 30px;
     box-sizing: border-box;
+    overflow: scroll;
 }
 .introduction p{
     margin-bottom: 20px;
