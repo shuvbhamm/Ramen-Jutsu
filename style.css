@@ -104,7 +104,7 @@ button{
 .about .introduction{
     width: calc(100vw - 50vh);
     text-align: justify;
-    font-size: 14px;
+    font-size: .9rem;
     line-height: 1.3rem;    word-spacing: 2px;  letter-spacing: 2px;
     color: white;
     padding: 30px;
