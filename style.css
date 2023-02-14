@@ -18,7 +18,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     font-size:12px;
     z-index: 100;
@@ -96,7 +96,7 @@ button{
     border: none;
 }
 .about{
-    height: 50vh;
+    min-height: 50vh;
     background: #257CA9;
     overflow: hidden;
     display: flex;
@@ -105,19 +105,28 @@ button{
     width: calc(100vw - 50vh);
     text-align: justify;
     font-size: 14px;
-    line-height: 1.3rem;    word-spacing: 2px;
+    line-height: 1.3rem;    word-spacing: 2px;  letter-spacing: 2px;
     color: white;
     padding: 30px;
     box-sizing: border-box;
     overflow: scroll;
+    position: relative;
+}
+.introduction .ramen-soup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 120px;
 }
 .introduction p{
     margin-bottom: 20px;
+    z-index: 1;
 }
 .about .ramenVideo{
     background: #073962;
     /* float: right; */
-    height: 100%;
+    min-height: 100%;
     width: 50vh;
     display: flex;
     justify-content: center;
