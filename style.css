@@ -288,3 +288,17 @@ footer p{
     top: 20vh;
     height: 80%;
 }
+.MenuBannerText{
+    color: white;
+    position: absolute;
+    bottom: 20vh;
+    right: 10%;
+    height: 200px;
+    width: fit-content;
+    z-index: 202;
+}
+.MenuBannerText h4{
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
