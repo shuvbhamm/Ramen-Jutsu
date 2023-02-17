@@ -413,6 +413,7 @@ footer p{
     border-radius: 20px;
     color: white;
     letter-spacing: 1.25px;
+    transform: translateY(5vh);
 }
 .loginForm *{
     margin-left: 10%;
@@ -435,4 +436,7 @@ footer p{
     font-size: 1rem;
     letter-spacing:1ch;
     background: repeating-linear-gradient(90deg, rgb(255, 255, 255) 0, rgb(255, 255, 255) 1ch, transparent 0, transparent 2ch) 0 100%/ 20ch 2px no-repeat;
+}
+.loginForm input:focus{
+    outline: none;
 }
