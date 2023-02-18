@@ -457,4 +457,13 @@ footer p{
         text-align: center;
         padding-bottom: 10%;
     }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about .ramenVideo{
+        width: auto;
+    }
+    .about .introduction{
+        width: auto;
+    }
 }
