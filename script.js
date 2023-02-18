@@ -12,3 +12,13 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+function nav(){
+  let element=document.getElementById("navBar");
+  if(element.classList.contains("visible")){
+      element.classList.remove("visible");
+      element.classList.add("nav-bar");
+  }
+  else{
+      element.classList.add("visible");
+  }
+}
