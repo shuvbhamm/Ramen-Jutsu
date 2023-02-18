@@ -446,7 +446,26 @@ footer p{
 
 
 /* media queries for responsiveness */
+@media (max-width:970px){
+    .sasukeStory{
+        right: unset;
+        bottom: unset;
+        top: 5vh;
+        min-width:350px;
+        width: 70vw;
 
+    }
+    .sasukeSection{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .sasuke-thinking{
+        min-width: 500px;
+        min-height: 370px;
+    }
+    
+}
 @media (max-width:813px){
     footer{
         flex-direction: column;
