@@ -535,6 +535,23 @@ footer p{
         gap: 20px;
     }
 }
+@media (max-width:700px){
+    .noodle, .MenuBannerText{
+        position: unset;
+        transform: scale(.8);
+    }
+    .noodle{
+        transform: translateY(50px) scale(.8);
+    }
+    .MenuBannerText{
+        transform: translateY(18vh) scale(.8);
+    }
+    .menuHeroSect{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 @media (max-width:425px){
     .accordion-cntr{
         transform: scale(.75);
